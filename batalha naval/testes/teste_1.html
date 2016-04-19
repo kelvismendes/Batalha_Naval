@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste1</title>
+	<style>
+		div#container{
+			display:table;
+			margin:90px auto;
+			width:700px;
+			height:400px;
+			border:3px solid #333;
+		}
+		table{
+			display:table;
+			margin:10px auto;
+			border:1px solid #333;
+			padding:10px;
+		}
+		td{
+			padding:20px;
+			border:1px solid #333;
+			cursor:pointer;
+
+		}
+	</style>
+	<script>
+		var poicoes = [];
+		window.onload = function(){
+			var tds = document.getElementsByTagName("td");
+			
+			var cont = 0;
+			while(cont < tds.length){
+				tds[cont].onclick = function(){
+					this.style.background = "red";
+					poicoes[cont] = 1;
+				}
+				cont++;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div id="container">
+			<table>
+
+					<tr>
+					   <td id="fads">1</td>
+
+					   <td>2</td>
+
+					   <td>3</td>
+
+					   <td>4</td>
+
+					   <td>5</td>
+
+					   <td>6</td>
+
+					   <td>7</td>
+
+					   <td>8</td>
+					</tr>
+
+					<tr>
+					   <td>1</td>
+
+					   <td>2</td>
+
+					   <td>3</td>
+
+					   <td>4</td>
+					
+
+					
+					   <td>5</td>
+
+					   <td>6</td>
+
+					   <td>7</td>
+
+					   <td>8</td>
+					</tr>
+
+			</table>
+	</div>
+
+</body>
+</html>

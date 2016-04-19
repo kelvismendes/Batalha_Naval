@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batalha Naval</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style_tela1_marca_posicoes.css">
+	<link rel="stylesheet" type="text/css" href="../css/style_segunda_etapa.css">
+
+	<script src="../js/script_Marca_Posicao.js"></script>
+	<script src="../js/script_segunda_etapa.js"></script>
+	<script src="../js/script_Inimigo_Marcacao.js"></script>
+	
+</head>
+<body>
+	<div id="list_Navios">
+		<ul>
+			<li>
+			    <div class="bloco"></div><div class="bloco"></div><div class="bloco"></div><div class="bloco"></div><div class="bloco"></div>
+			</li>
+			<li>
+				<div class="bloco"></div><div class="bloco"></div><div class="bloco"></div><div class="bloco"></div><div class="bloco"></div>
+			</li>
+			<li>
+				<div class="bloco"></div><div class="bloco"></div><div class="bloco"></div><div class="bloco"></div>
+			</li>
+			<li>
+				<div class="bloco"></div><div class="bloco"></div><div class="bloco"></div>
+			</li>
+			<li>
+				<div class="bloco"></div><div class="bloco"></div>
+			</li>
+			<li>
+				<div class="bloco"></div>
+			</li>
+		</ul>	
+		<button type="button" id="but_Iniciar" onclick="gerarNovaTabela()">Iniciar</button>
+	</div>
+
+	<div id="container">
+		<span id="seila">Escolha As Posições Dos Navios</span>
+		
+		<div id="container_marcacoes">
+
+			<table id="tb_marcar_posicoes">
+				<tr>
+					<td id="0" class="td_marca_posicoes"></td>
+					<td id="1"class="td_marca_posicoes"></td>
+					<td id="2"class="td_marca_posicoes"></td>
+					<td id="3"class="td_marca_posicoes"></td>
+					<td id="4"class="td_marca_posicoes"></td>
+					<td id="5"class="td_marca_posicoes"></td>
+					<td id="6" class="td_marca_posicoes"></td>
+					<td id="7"class="td_marca_posicoes"></td>
+					<td id="8"class="td_marca_posicoes"></td>
+					<td id="9"class="td_marca_posicoes"></td>
+					<td id="10"class="td_marca_posicoes"></td>
+					<td id="11"class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					<td id="12"class="td_marca_posicoes"></td>
+					<td id="13"class="td_marca_posicoes"></td>
+					<td id="14"class="td_marca_posicoes"></td>
+					<td id="15"class="td_marca_posicoes"></td>
+					<td id="16" class="td_marca_posicoes"></td>
+					<td id="17"class="td_marca_posicoes"></td>
+					<td id="18"class="td_marca_posicoes"></td>
+					<td id="19"class="td_marca_posicoes"></td>
+					<td id="20"class="td_marca_posicoes"></td>
+					<td id="21"class="td_marca_posicoes"></td>
+					<td id="22"class="td_marca_posicoes"></td>
+					<td id="23"class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					<td id="24"class="td_marca_posicoes"></td>
+					<td id="25"class="td_marca_posicoes"></td>
+					<td id="26"class="td_marca_posicoes"></td>
+					<td id="27"class="td_marca_posicoes"></td>
+					<td id="28"class="td_marca_posicoes"></td>
+					<td id="29"class="td_marca_posicoes"></td>
+					<td id="30"class="td_marca_posicoes"></td>
+					<td id="31"class="td_marca_posicoes"></td>
+					<td id="32"class="td_marca_posicoes"></td>
+					<td id="33"class="td_marca_posicoes"></td>
+					<td id="34"class="td_marca_posicoes"></td>
+					<td id="35"class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					<td id="36"class="td_marca_posicoes"></td>
+					<td id="37"class="td_marca_posicoes"></td>
+					<td id="38"class="td_marca_posicoes"></td>
+					<td id="39"class="td_marca_posicoes"></td>
+					<td id="40"class="td_marca_posicoes"></td>
+					<td id="41"class="td_marca_posicoes"></td>
+					<td id="42"class="td_marca_posicoes"></td>
+					<td id="43"class="td_marca_posicoes"></td>
+					<td id="44"class="td_marca_posicoes"></td>
+					<td id="45"class="td_marca_posicoes"></td>
+					<td id="46"class="td_marca_posicoes"></td>
+					<td id="47"class="td_marca_posicoes"></td>
+						
+				</tr>
+
+				<tr>
+					<td id="48"class="td_marca_posicoes"></td>
+					<td id="49"class="td_marca_posicoes"></td>
+					<td id="50"class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+				</tr>
+
+				<tr>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+					<td class="td_marca_posicoes"></td>
+				</tr>
+			</table>		
+		</div>
+	
+	</div>
+
+	
+
+
+
+	<div id="container_segunda_etapa">
+		
+			<div id="container_mostrar_navios">
+			<table id="tb_mostrar_posicoes">
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+
+
+				<tr>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+							<td class="td_mostrar_posicoes"></td>
+				</tr>
+			</table>	
+		</div>
+
+		<div id="controles">
+			<button type="button" id="but_finalizar" onclick="jogadaInimigo()">Finalizar Jogada</button>
+		</div>
+
+		<div id="container_mostrar_navios_inimigo">
+			<table id="tb_mostrar_posicoes_inimigo">
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+			    <tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+
+				<tr>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+							<td class="td_mostrar_posicoes_inimigo"></td>
+				</tr>
+			</table>	
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
